@@ -5,14 +5,14 @@ import Avatar from "./Avatar";
 function NavbarMobile() {
   return (
     <>
-      <main className='w-screen h-9 flex items-center justify-between'>
+      <main className='w-screen h-10 flex items-center justify-between'>
         <section className='p-2'>
           <FaAlignJustify size={25} color='#474745' />
         </section>
-        <section className='w-10'>
+        <section className='pl-8 w-20'>
           <img src='../src/assets/HERO TITLE.png' alt='Hero logo' />
         </section>
-        <section className='p-2 flex flex-row gap-2'>
+        <section className='p-2 flex flex-row gap-2 items-center'>
           <MdOutlineShoppingCart size={25} />
           <Avatar />
         </section>
