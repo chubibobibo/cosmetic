@@ -5,7 +5,6 @@ function IndexPage() {
     <>
       <NavbarMobile />
       IndexPage
-      <p className='text-2xl'>HELLO</p>
     </>
   );
 }
