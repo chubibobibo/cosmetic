@@ -1,15 +1,10 @@
-import { Box } from "@mantine/core";
+import { NavbarMobile } from "../utils";
 
 function IndexPage() {
   return (
     <>
+      <NavbarMobile />
       IndexPage
-      {/* <Text size='xl' fw={800}>
-        World
-      </Text> */}
-      <Box bg='red.5' my='xl' w='100'>
-        jaja
-      </Box>
     </>
   );
 }
