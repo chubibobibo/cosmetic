@@ -15,7 +15,7 @@ function NavbarMobile() {
 
   return (
     <>
-      <main className='w-screen h-10 flex items-center justify-between'>
+      <main className='w-screen h-14 flex items-center justify-between border-b-1 border-gray-300'>
         <section className='p-2' onClick={handleIsOpenClick}>
           {!isOpenState ? (
             <button>
