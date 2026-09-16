@@ -1,1 +1,11 @@
 @import "tailwindcss";
+
+@theme {
+  --font-Montserrat: Montserrat;
+  --font-Overlock: Overlock;
+  --font-Oxygen: Oxygen;
+  --font-Roboto: Roboto;
+
+  --color-customCream: rgb(217, 194, 167);
+  /* --color-customCream1: rgb(35, 45, 135); */
+}
