@@ -11,7 +11,7 @@ function MenuMobile({ isOpenState }: OpenStateProps) {
   return (
     <>
       <main
-        className={`${modalOpen} w-screen absolute bg-gray-50 flex items-start justify-center pt-5 pb-2 transition-opacity duration-300 ${opacityActive}`}
+        className={`${modalOpen} w-screen absolute bg-gray-50 flex items-start justify-center pt-5 pb-2 ${opacityActive}`}
       >
         <section className='flex flex-col items-center gap-2'>
           <section>Shop</section>
