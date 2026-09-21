@@ -8,14 +8,16 @@ function HeroImage() {
       {/* height takes 11/12 while navbar which is rendered on top has h-1/12 */}
       <main className='p-4 h-11/12'>
         <section
-          className={`h-full bg-[url(${mainImage})] bg-cover bg-center flex flex-col justify-end pb-20`}
+          className={`h-full bg-cover bg-center flex flex-col justify-end pb-20`}
+          style={{ backgroundImage: `url(${mainImage})` }}
         >
+          {/* Pass the full tailwind utilities rather than just the value */}
           <Button
-            width={30}
-            height={15}
-            font={"Roboto"}
-            textSize={"lg"}
-            bgColor={"white"}
+            width={"w-30"}
+            height={"h-13"}
+            font={"font-Roboto"}
+            textSize={"text-lg"}
+            bgColor={"bg-white"}
             label={"Shop Now"}
           />
         </section>
@@ -24,5 +26,3 @@ function HeroImage() {
   );
 }
 export default HeroImage;
-
-//width, height, font, textSize, bgColor
