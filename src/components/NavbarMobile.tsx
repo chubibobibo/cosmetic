@@ -10,7 +10,6 @@ function NavbarMobile() {
 
   const handleIsOpenClick = () => {
     setIsOpenState((prev: boolean) => !prev);
-    console.log("clicked");
   };
 
   return (

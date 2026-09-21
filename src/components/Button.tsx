@@ -1,6 +1,6 @@
 interface ButtonProps {
-  width: number;
-  height: number;
+  width: string;
+  height: string;
   font: string;
   textSize: string;
   bgColor: string;
@@ -18,7 +18,7 @@ function Button({
   return (
     <>
       <button
-        className={`w-${width} h-${height} bg-${bgColor} text-${textSize} font-${font} p-1 rounded-full mx-auto flex justify-center items-center cursor-pointer hover:bg-customCream shadow-md active:scale-95 transition-transform duration-150 touch-manipulation`}
+        className={`${width} ${height} ${bgColor} ${textSize} ${font} p-1 rounded-full mx-auto flex justify-center items-center cursor-pointer hover:bg-customCream shadow-md active:scale-95 transition-transform duration-150 ease-in-out active:bg-gray-200 touch-manipulation`}
       >
         {label}
       </button>
