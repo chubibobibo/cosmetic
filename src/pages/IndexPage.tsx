@@ -16,6 +16,7 @@ function IndexPage() {
               prodIngredients={allProducts.ingredients}
               prodShipping={allProducts.shipping}
               prodVolume={allProducts.volume}
+              prodImage={allProducts.imageUrl}
             />
           </section>
         );
