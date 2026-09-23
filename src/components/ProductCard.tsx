@@ -19,11 +19,9 @@ function ProductCard({
   return (
     <>
       <main className='w-screen p-4 flex flex-col gap-1'>
-        <section
-          className={`h-screen bg-cover bg-center flex flex-col justify-start`}
-        >
+        <section className={`bg-cover bg-center flex flex-col justify-start`}>
           {/* Contents of card */}
-          <section className='bg-red-300 h-70 mb-10 object-contain'>
+          <section className='bg-red-300 h-70 mb-4 object-contain'>
             <img
               src={prodImage}
               alt=''
@@ -31,20 +29,17 @@ function ProductCard({
             />
           </section>
           <section className='flex flex-col gap-1'>
-            <p>Name: {prodName}</p>
-            {/* <p>Description: {prodDesc}</p> */}
-            <p>Price: {prodPrice}</p>
-            <p>
+            <p className='font-Roboto text-base text-gray-800 font-semibold'>
+              {prodName}
+            </p>
+            <p className='text-gray-500'>{prodVolume}ml</p>
+            <p className='font-bold mb-10'>€ {prodPrice}</p>
+            {/* <p>
               Ingredients:{" "}
               {prodIngredients.map((allIngredients, idx) => {
                 return <span key={idx}>{`${allIngredients}, `}</span>;
               })}
-            </p>
-
-            {/* <p className='overflow-x-scroll h-20 border-1 border-gray-300 p-1'>
-              shipping: {prodShipping}
             </p> */}
-            <p>Volume: {prodVolume}</p>
           </section>
           {/* Contents of card */}
         </section>

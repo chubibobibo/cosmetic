@@ -8,8 +8,10 @@ function HeroImage() {
       {/* height takes 11/12 while navbar which is rendered on top has h-1/12 */}
       <main className='p-4 h-11/12'>
         <section
-          className={`h-full bg-cover bg-center flex flex-col justify-end pb-20`}
-          style={{ backgroundImage: `url(${mainImage})` }}
+          className={`h-11/12 bg-cover bg-center flex flex-col justify-end pb-20`}
+          style={{
+            backgroundImage: `url(${mainImage})`,
+          }}
         >
           {/* Pass the full tailwind utilities rather than just the value */}
           <Button
