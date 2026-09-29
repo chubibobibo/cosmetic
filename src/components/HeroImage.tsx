@@ -1,8 +1,11 @@
 import Button from "./Button";
 
 function HeroImage() {
+  /** @navLink string that is passed as props to button component to navigate to /shop using useNavigate */
   const mainImage =
     "https://res.cloudinary.com/kgtlwrxi/image/upload/f_auto,q_auto/Gemini_Generated_Image__1";
+  const navLink = "/shop";
+
   return (
     <>
       {/* height takes 11/12 while navbar which is rendered on top has h-1/12 */}
@@ -21,6 +24,7 @@ function HeroImage() {
             textSize={"text-lg"}
             bgColor={"bg-white"}
             label={"Shop Now"}
+            handleClick={navLink}
           />
         </section>
       </main>

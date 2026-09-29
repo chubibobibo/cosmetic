@@ -1,7 +1,7 @@
 // Here lives the routes
 
 import { createRootRoute, createRoute } from "@tanstack/react-router";
-import { HomePageLayout, IndexPage, TestPage } from "../utils";
+import { HomePageLayout, IndexPage, TestPage, ShoppingPage } from "../utils";
 
 const rootRoute = createRootRoute({ component: HomePageLayout }); // creates the root route having HomepageLayout as the component
 
@@ -18,5 +18,15 @@ const TestRoute = createRoute({
   path: "test",
 });
 
+const ShoppingPageRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  component: ShoppingPage,
+  path: "shop",
+});
+
 // create a route tree (specifying the children pages that it contains) that will be used in main.tsx
-export const routeTree = rootRoute.addChildren([IndexRoute, TestRoute]);
+export const routeTree = rootRoute.addChildren([
+  IndexRoute,
+  TestRoute,
+  ShoppingPageRoute,
+]);
