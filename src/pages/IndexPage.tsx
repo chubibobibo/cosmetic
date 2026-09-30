@@ -1,11 +1,27 @@
-import { NavbarMobile } from "../utils";
+import { NavbarMobile, HeroImage, ProductCard } from "../utils";
+import { products } from "../utils/productList";
 
 function IndexPage() {
   return (
-    <>
+    <main className='h-screen'>
       <NavbarMobile />
-      IndexPage
-    </>
+      <HeroImage />
+      {products.map((allProducts) => {
+        return (
+          <section key={allProducts.id.$oid}>
+            <ProductCard
+              prodName={allProducts.name}
+              prodDesc={allProducts.description}
+              prodPrice={allProducts.price}
+              prodIngredients={allProducts.ingredients}
+              prodShipping={allProducts.shipping}
+              prodVolume={allProducts.volume}
+              prodImage={allProducts.imageUrl}
+            />
+          </section>
+        );
+      })}
+    </main>
   );
 }
 export default IndexPage;
