@@ -4,9 +4,6 @@ import ChipComponent from "./ChipComponent";
 
 function FilterBar() {
   const [active, setActive] = useState(0);
-  // const handleClick = (id) => {
-  //   setActive(id);
-  // };
 
   return (
     <>
@@ -17,6 +14,7 @@ function FilterBar() {
           setActive={setActive}
           id={1}
           size={"2"}
+          link={"/shop"}
         />
         <ChipComponent
           title={"Hair"}
@@ -24,6 +22,7 @@ function FilterBar() {
           setActive={setActive}
           id={2}
           size={"2"}
+          link={"/shop/hairProducts"}
         />
         <ChipComponent
           title={"Body"}
@@ -31,6 +30,7 @@ function FilterBar() {
           setActive={setActive}
           id={3}
           size={"2"}
+          link={"/shop/bodyProducts"}
         />
         <ChipComponent
           title={"Wellness"}
@@ -38,25 +38,8 @@ function FilterBar() {
           setActive={setActive}
           id={4}
           size={"3"}
+          link={"/shop/wellnessProducts"}
         />
-        {/* <section
-          className={`flex col-span-2 justify-center rounded-3xl h-7 ${styleActive[active]}`}
-          onClick={() => handleClick(1)}
-        >
-          All
-        </section>
-        <section
-          className={`flex col-span-2 justify-center rounded-3xl h-7 ${styleActive[active]}`}
-          onClick={() => handleClick(2)}
-        >
-          Hair
-        </section>
-        <section className='flex col-span-3 justify-center rounded-3xl h-7'>
-          Body
-        </section>
-        <section className='flex col-span-3 justify-center rounded-3xl h-7 px-2'>
-          Wellness
-        </section> */}
       </main>
     </>
   );
