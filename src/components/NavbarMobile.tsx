@@ -4,6 +4,7 @@ import { IoClose } from "react-icons/io5";
 import Avatar from "./Avatar";
 import MenuMobile from "./MenuMobile";
 import { useState } from "react";
+import { useNavigate } from "@tanstack/react-router";
 
 function NavbarMobile() {
   const [isOpenState, setIsOpenState] = useState(false);
@@ -11,6 +12,8 @@ function NavbarMobile() {
   const handleIsOpenClick = () => {
     setIsOpenState((prev: boolean) => !prev);
   };
+
+  const navigate = useNavigate({ from: "/" });
 
   return (
     <>
@@ -31,7 +34,7 @@ function NavbarMobile() {
         <section className='flex fixed mt-10 h-fit'>
           <MenuMobile isOpenState={isOpenState} />
         </section>
-        <section className='pl-8 w-20'>
+        <section className='pl-8 w-20' onClick={() => navigate({ to: "/" })}>
           <img src='../src/assets/HERO TITLE.png' alt='Hero logo' />
         </section>
         <section className='p-2 flex flex-row gap-2 items-center'>

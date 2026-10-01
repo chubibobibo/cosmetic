@@ -1,4 +1,5 @@
 import { HeroImage, FilterBar, NavbarMobile } from "../utils";
+import { Outlet } from "@tanstack/react-router";
 
 function ShoppingPage() {
   return (
@@ -8,6 +9,9 @@ function ShoppingPage() {
         <HeroImage />
         <section className='flex justify-center'>
           <FilterBar />
+        </section>
+        <section>
+          <Outlet />
         </section>
       </main>
     </>
